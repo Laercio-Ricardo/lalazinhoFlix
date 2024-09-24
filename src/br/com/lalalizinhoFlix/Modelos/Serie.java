@@ -6,6 +6,7 @@ public class Serie extends Titulo{
     private int episodiosPorTemporadas;
     private boolean ativa;
     private int minutosPorEpisodios;
+// Inicio do GEt e sett
 
     public int getTemporadas() {
         return temporadas;
@@ -19,12 +20,17 @@ public class Serie extends Titulo{
         return ativa;
     }
 
+
+    // Fim go Get e setter
+
     public void setTemporadas(int temporadas) {
         this.temporadas = temporadas;
     }
 
     public void setEpisodiosPorTemporadas(int episodiosPorTemporadas) {
         this.episodiosPorTemporadas = episodiosPorTemporadas;
+
+
     }
 
     public void setAtiva(boolean ativa) {

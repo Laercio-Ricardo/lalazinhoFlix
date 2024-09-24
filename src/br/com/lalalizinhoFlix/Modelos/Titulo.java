@@ -12,6 +12,7 @@ public class Titulo {
     private int anoDeLancamento;
 
     //Usando o GET para enviar valores - clica nop botão direto/Generate
+
     public int getTotalDeAvaliacoes(){
         return totalDeAvaliacoes;
     }
@@ -32,6 +33,7 @@ public class Titulo {
         return somaAvaliacao;
     }
 
+
     public int getDuracao() {
         return duracao;
     }
@@ -43,7 +45,9 @@ public class Titulo {
     public boolean isIncluidoNoPlano() {
         return incluidoNoPlano;
     }
+
     //Usando o SETTER para deixar digitar valores - clica com o botão esquerdo/Generate
+
 
     public void setNome(String nome) {
         this.nome = nome;
@@ -64,14 +68,15 @@ public class Titulo {
     public void setAtoresPrincipais(String atoresPrincipais) {
         this.atoresPrincipais = atoresPrincipais;
     }
+
     /* Criando metodos */
 
     public void exibeFichaTecnica(){
         System.out.println("Nome do filme: " + nome);
         System.out.println("Ano de lançamento: " + anoDeLancamento);
-        System.out.println("Coadjuvantes: " + atoresPrincipais);
-        System.out.println("Duração do filme: " + duracao + " Minutos");
-        System.out.println("Resumo do filme: " + sinopse);
+        System.out.println("Coadjuvantes: " + getAtoresPrincipais());
+        System.out.println("Duração do filme: " + getDuracao() + " Minutos");
+        System.out.println("Resumo do filme: " + getSinopse());
     }
     public void avaliacao(double nota){
         somaAvaliacao += nota;

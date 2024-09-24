@@ -1,11 +1,12 @@
-import br.com.lalalizinhoFlix.Modelos.Filme;
-import br.com.lalalizinhoFlix.Modelos.Serie;
+   import br.com.lalalizinhoFlix.Modelos.Filme;
+   import br.com.lalalizinhoFlix.Modelos.Serie;
+
 
 public class Principal {
     public static void main(String[] args) {
 
         Filme meuFilme = new Filme();
-        meuFilme.setNome("O Poderoso Laérciozão");
+        meuFilme.setNome("O podereso Laérciozão");
         meuFilme.setAnoDeLancamento(2024);
         meuFilme.setAtoresPrincipais("Laércio e Gisselaine");
         meuFilme.setDuracao(192);
@@ -13,20 +14,26 @@ public class Principal {
 
         meuFilme.exibeFichaTecnica();
         meuFilme.avaliacao(8);
-        meuFilme.avaliacao(9);
-        System.out.println("O Filme: " + meuFilme.getNome() + " teve " + meuFilme.getTotalDeAvaliacoes()+ " avaliações");
-        System.out.println("Média das avaliações : " + meuFilme.pegaMedia());
+        meuFilme.avaliacao(10);
+        System.out.println("O total de avaliações foi: " + meuFilme.getTotalDeAvaliacoes());
+        System.out.println("Média das avaliações desse Filme: " + meuFilme.pegaMedia());
 
-        //criando uma nova série
-        Serie lalalzinho = new Serie();
-        lalalzinho.setNome("Lalazinho das Meninas");
-        lalalzinho.setAnoDeLancamento(2024);
-        lalalzinho.exibeFichaTecnica();
-        lalalzinho.setTemporadas(15);
-        lalalzinho.setEpisodiosPorTemporadas(5);
-        lalalzinho.setAtoresPrincipais("Eu e vc");
+
+        //Criando series
+
+        Serie lalazinho = new Serie();
+        lalazinho.setNome("Lalazinho das meninas");
+        lalazinho.setAnoDeLancamento(2024);
+        lalazinho.exibeFichaTecnica();
+        lalazinho.setTemporadas(15);
+        lalazinho.setEpisodiosPorTemporadas(5);
+        lalazinho.setAtoresPrincipais("Lalazinho e Gisselaine");
+        lalazinho.setDuracao(200);
+
+
 
     }
+
 
 
 }
