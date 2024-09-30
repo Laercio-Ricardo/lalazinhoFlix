@@ -17,6 +17,8 @@ public class Principal {
         meuFilme.avaliacao(10);
         System.out.println("O total de avaliações foi: " + meuFilme.getTotalDeAvaliacoes());
         System.out.println("Média das avaliações desse Filme: " + meuFilme.pegaMedia());
+        System.out.println("O filme tem duração de : " + meuFilme.getDuracao() + " minutos");
+
 
 
         //Criando series
@@ -25,10 +27,11 @@ public class Principal {
         lalazinho.setNome("Lalazinho das meninas");
         lalazinho.setAnoDeLancamento(2024);
         lalazinho.exibeFichaTecnica();
-        lalazinho.setTemporadas(15);
-        lalazinho.setEpisodiosPorTemporadas(5);
+        lalazinho.setTemporadas(10);
+        lalazinho.setEpisodiosPorTemporadas(20);
+        lalazinho.setMinutosPorEpisodios(20);
         lalazinho.setAtoresPrincipais("Lalazinho e Gisselaine");
-        lalazinho.setDuracao(200);
+        System.out.println("A série tem duração de: " + lalazinho.getDuracao() + " minutos");
 
 
 

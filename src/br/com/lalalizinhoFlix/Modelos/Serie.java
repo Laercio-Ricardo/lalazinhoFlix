@@ -43,6 +43,12 @@ public class Serie extends Titulo{
 
     public int getMinutosPorEpisodios() {
         return minutosPorEpisodios;
+                      }
 
+    //Sobescrever metodos, ajuda a calcular os minutos das temporadas e quantas temporadas
+
+    @Override
+    public int getDuracao() {
+        return temporadas * episodiosPorTemporadas * minutosPorEpisodios;
     }
 }
